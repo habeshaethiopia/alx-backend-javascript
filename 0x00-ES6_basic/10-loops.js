@@ -1,8 +1,8 @@
-// the loop should iterate over the array
-export default function appendToEachArrayValue(array, appendString) {
-  for (const idx of array) {
-    const value = array[idx];
+export default function appendToEachArrayValue (array, appendString) {
+  let idx = 0;
+  for (const value of array) {
     array[idx] = appendString + value;
+    idx++;
   }
 
   return array;
