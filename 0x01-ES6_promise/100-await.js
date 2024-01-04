@@ -9,9 +9,3 @@ export default async function asyncUploadUser() {
     return { photo: null, user: null };
   }
 }
-const test = async () => {
-    const value = await asyncUploadUser();
-    console.log(value);
-};
-
-test();
