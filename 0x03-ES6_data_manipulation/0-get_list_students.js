@@ -13,4 +13,3 @@ function getListStudents() {
     },
   ];
 }
-console.log(getListStudents());
