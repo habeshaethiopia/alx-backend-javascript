@@ -1,8 +1,7 @@
 function getListStudentIds(arr) {
-    ans=[]
-    arr.forEach(element => {
-        ans.push(element[id])
-        
-    });
-    return ans
+  var ans = [];
+  for (var i = 0; i < arr.length; i++) {
+    ans.push(arr[i]["id"]);
+  }
+  return ans;
 }
