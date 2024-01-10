@@ -1,10 +1,6 @@
-export default function getStudentsByLocation(arr, loc)
-{
-    var ans = [];
-    for (var i = 0; i < arr.length; i++) {
-      if arr[i]['location']==loc:
-          ans.push(arr[i]);
-
-    }
-    return ans
+export default function getStudentIdsSum(arr) {
+  var ans = 0;
+  for (var i = 0; i < arr.length; i++) {
+    ans += arr[i]["id"];
+  }
 }
