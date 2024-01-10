@@ -3,4 +3,5 @@ export default function getStudentIdsSum(arr) {
   for (var i = 0; i < arr.length; i++) {
     ans += arr[i]["id"];
   }
+    return ans
 }
