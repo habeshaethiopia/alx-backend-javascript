@@ -1,7 +1,7 @@
 export default function getStudentIdsSum(arr) {
-  var ans = 0;
-  for (var i = 0; i < arr.length; i++) {
-    ans += arr[i]["id"];
+  let ans = 0;
+  for (let i = 0; i < arr.length; i += 1) {
+    ans += arr[i].id;
   }
   return ans;
 }
