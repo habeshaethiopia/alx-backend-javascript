@@ -1,15 +1,12 @@
 export default function cleanSet(s, str) {
-  if typeof str !== "string" {
-    throw new TypeError("str must be a string");
-  }
-  if not str.length {
-    throw new TypeError("str must not be empty");
-  }
   const clean = [];
+  if (typeof str !== 'string') {
+    return '';
+  }
   for (const val of s) {
-    if (val.startsWith(str) && typeof val === "string") {
+    if (val.startsWith(str) && typeof val === 'string') {
       clean.push(val.substr(str.length));
     }
   }
-  return clean.join("-");
+  return clean.join('-');
 }
