@@ -1,6 +1,11 @@
 export default function cleanSet(s, str) {
   const clean = [];
-  if (typeof str !== 'string') {
+  if (
+    !s
+    && !str
+    && !(s instanceof Set)
+    && typeof str !== 'string'
+  ) {
     return '';
   }
   for (const val of s) {
