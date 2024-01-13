@@ -12,3 +12,4 @@ export default function groceriesList() {
   }
   return groceries;
 }
+console.log(groceriesList());
