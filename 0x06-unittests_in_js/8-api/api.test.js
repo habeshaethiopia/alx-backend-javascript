@@ -1,13 +1,13 @@
-const request = require('request');
-const { expect } = require('chai');
-import fetch from "node-fetch";
-describe('API integration test', () => {
-  const API_URL = 'http://localhost:7865';
+const request = require("request");
+const { expect } = require("chai");
 
-  it('GET / returns correct response', (done) => {
+describe("API integration test", () => {
+  const API_URL = "http://localhost:7865";
+
+  it("GET / returns correct response", (done) => {
     request.get(`${API_URL}/`, (_err, res, body) => {
       expect(res.statusCode).to.be.equal(200);
-      expect(body).to.be.equal('Welcome to the payment system');
+      expect(body).to.be.equal("Welcome to the payment system");
       done();
     });
   });
