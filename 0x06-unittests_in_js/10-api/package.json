@@ -1,0 +1,19 @@
+{
+  "name": "10-api",
+  "version": "1.0.0",
+  "description": "A simple API for learning basic integration testing in NodeJS",
+  "main": "api.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habeshaethiopia/alx-backend-javascript.git#main"
+  },
+  "author": "adane moges <adanemoges6@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habeshaethiopia/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/habeshaethiopia/alx-backend-javascript/tree/main#readme"
+}
